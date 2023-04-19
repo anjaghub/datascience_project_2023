@@ -19,9 +19,10 @@
         - Use PRAW (https://praw.readthedocs.io/en/latest/index.html)
     - create features based on post/comment text
         - e.g. try to extract names, dates, events, etc.
-- Modeling: Clustering 
+        - extract domain from associated shared url and use as feature (could use database of trustworthy domains to compare with and create dummy)
+- Modeling: Clustering
     - utilizing sentiment analysis and created features
     - clustering with processed post/user data 
-    - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection)
+    - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection; "Uncovering climate change bots")
     - Find characteristics of clusters
     - Evaluation difficult
