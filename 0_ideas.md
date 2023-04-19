@@ -24,5 +24,7 @@
     - utilizing sentiment analysis and created features
     - clustering with processed post/user data 
     - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection; "Uncovering climate change bots")
+        - https://arxiv.org/abs/1802.04289 - particularly interesting for tweet based detection
+        - https://arxiv.org/abs/2106.13088 - pretrained detection model on github (but user based)
     - Find characteristics of clusters
     - Evaluation difficult
