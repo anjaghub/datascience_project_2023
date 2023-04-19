@@ -3,6 +3,8 @@
 - Exploratory Data Analysis (Project/Data Understanding)
     - data types, summary statistics (samples of very high scorers)
     - sentiment over time
+    - languages used
+    - which subreddits are particularly active regarding climate crisis (pos/negative)
     - correlations (sentiment score and voting score, maybe also with absolute value of sentiment)
     - Wordclouds (maybe also for subgroups with certain keywords)
 - Data Preparation/Feature engineering
@@ -20,11 +22,14 @@
     - create features based on post/comment text
         - e.g. try to extract names, dates, events, etc.
         - extract domain from associated shared url and use as feature (could use database of trustworthy domains to compare with and create dummy)
-- Modeling: Clustering
-    - utilizing sentiment analysis and created features
-    - clustering with processed post/user data 
-    - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection; "Uncovering climate change bots")
-        - https://arxiv.org/abs/1802.04289 - particularly interesting for tweet based detection
-        - https://arxiv.org/abs/2106.13088 - pretrained detection model on github (but user based)
-    - Find characteristics of clusters
-    - Evaluation difficult
+- Modeling
+    - Clustering
+        - utilizing sentiment analysis and created features
+        - clustering with processed post/user data 
+        - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection; "Uncovering climate change bots")
+            - https://arxiv.org/abs/1802.04289 - particularly interesting for tweet based detection
+            - https://arxiv.org/abs/2106.13088 - pretrained detection model on github (but user based)
+        - Find characteristics of clusters
+        - Evaluation difficult
+    - LDA?
+        - identifying topics of documents
