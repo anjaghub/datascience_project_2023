@@ -1,5 +1,6 @@
 # Ignore vscode files
 .vscode
+.idea
 
 # Ignore data folder
 data/
