@@ -1,5 +1,7 @@
 # Ideas
 
+
+## Beginning
 - Exploratory Data Analysis (Project/Data Understanding)
     - Data types, summary statistics (samples of very high scorers)
     - Sentiment over time
@@ -29,7 +31,27 @@
         - Find clusters of activism, harassment, disinformation, etc. (try to detect suspicious users/posts -> Bot/troll detection; "Uncovering climate change bots")
             - https://arxiv.org/abs/1802.04289 - particularly interesting for tweet based detection
             - https://arxiv.org/abs/2106.13088 - pretrained detection model on github (but user based)
+            - https://ieeexplore.ieee.org/document/9410535 - especially about tweet-based bot detection
         - Find characteristics of clusters
         - Evaluation difficult
     - LDA?
         - Identifying topics of documents
+
+
+## Final project
+- How did sentiment change over time?
+    - Maybe re-do sentiment analysis with newer/more accurate methods
+    - Identify major influential events on sentiment
+- Which topics regarding climate change are particularly positively/negatively discussed? 
+    - Word cloud per group
+    - Do topic identification for positive/neutral/negative posts ("LDA")
+    - Reverse search: for given topics, which are most negative/positive
+- Are there any clusters in topics, sentiment, etc. (Here feature engineering comes particularly into play)
+    - What characteristics do the found clusters have?
+
+## Inofficial further tries
+- Identify bots (if we have enough time/motivation)
+    - Maybe find pre-trained model to detect bots
+- Fetch usernames (and more) via API
+    - generate graph and features based on API data
+    - thus improve bot detection
