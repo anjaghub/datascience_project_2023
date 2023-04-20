@@ -1,6 +1,6 @@
 # Reddit climate change project
 
-![Sad Snoo](/title_image.jpg)
+![Sad Snoo](/utils/title_image.jpg)
 
 Supervision: Prof. Dr. Jan Fabian Ehmke
 
