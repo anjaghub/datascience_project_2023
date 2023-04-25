@@ -1,6 +1,7 @@
 # Ignore vscode files
 .vscode
 .idea
+__pycache__
 
 # Ignore data folder
 data/
