@@ -40,18 +40,18 @@
 
 ## Final project
 - How did sentiment change over time?
-    - Maybe re-do sentiment analysis with newer/more accurate methods
+    - Maybe re-do sentiment analysis with newer/more accurate methods (HF-transformers)
     - Identify major influential events on sentiment
-- Which topics regarding climate change are particularly positively/negatively discussed? 
-    - Word cloud per group
-    - Do topic identification for positive/neutral/negative posts ("LDA")
-    - Reverse search: for given topics, which are most negative/positive
 - Are there any clusters in topics, sentiment, etc. (Here feature engineering comes particularly into play)
     - What characteristics do the found clusters have?
+- Which topics regarding climate change are particularly positively/negatively discussed, which clusters are particularly pos/neg? 
+    - Word cloud per group
+    - Do topic/cluster identification for positive/neutral/negative posts ("LDA")
+    - Reverse search: for given topics/clusters, which are most negative/positive
 
 ## Inofficial further tries
+- Fetch usernames (and more) via API
+    - generate features (and graph) based on API data
+    - thus improve bot detection/clustering
 - Identify bots (if we have enough time/motivation)
     - Maybe find pre-trained model to detect bots
-- Fetch usernames (and more) via API
-    - generate graph and features based on API data
-    - thus improve bot detection
