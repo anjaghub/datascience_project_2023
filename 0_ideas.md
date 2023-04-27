@@ -49,9 +49,14 @@
     - Do topic/cluster identification for positive/neutral/negative posts ("LDA")
     - Reverse search: for given topics/clusters, which are most negative/positive
 
+
 ## Inofficial further tries
 - Fetch usernames (and more) via API
     - generate features (and graph) based on API data
     - thus improve bot detection/clustering
 - Identify bots (if we have enough time/motivation)
     - Maybe find pre-trained model to detect bots
+    - Detect bots activity in clusters
+
+
+Meme: "Is it a bird? Is it a plane? No its BERT!"
