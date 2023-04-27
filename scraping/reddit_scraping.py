@@ -54,11 +54,17 @@ class ScrapePosts(RedditScraping):
         super().__init__(df, data_path, credentials_path, params)
 
     def scrape_post(self, subreddit, post_id):
+        # FIXME include timing to not exceed rate limits; try to access http header again
+        # https://stackoverflow.com/questions/474528/how-to-repeatedly-execute-a-function-every-x-seconds
         res = requests.get(f"https://oauth.reddit.com/r/{subreddit}/comments/{post_id}",
                     headers=self.headers,
                     params=self.params)
-        res_json = res.json()
-        return {"author": res_json["data"]["children"][0]["data"]["author"], # Problem if banned! Check response headers before checking data!
+        try:
+            res_json = res.json()["data"]["children"]
+        except:
+            # Problem if banned! Check response headers before checking data!
+            return -1
+        return {"author": res_json[0]["data"]["author"],
                 "full": res_json}  # FIXME make selection only!
     
     def run(self):
@@ -72,10 +78,13 @@ class ScrapeUsers(RedditScraping):
         super().__init__(df, data_path, credentials_path, params)
 
     def scrape_user(self, username):
+        # FIXME include timing to not exceed rate limits; try to access http header again
         res = requests.get(f"https://oauth.reddit.com/user/{username}/about.json",
                     headers=self.headers,
                     params=self.params)
         return res.json() # FIXME make selection only!
 
     def run(self):
-        pass
+        for idx, row in self.df.iterrows():
+            self.results[idx] = self.scrape_user(username=row["username"])
+            break
