@@ -33,7 +33,7 @@ We also discussed that:
 - Empty posts, bot subreddits, duplicates and the word climate change are sorted out.
 - We will use BERTopic for topic clustering.
 - We will use comments, post text and post title
-- Luis will do some research on Reddit and climate change discourse over time so we have some context for our results
+- Luis will do some research on Reddit and climate change discourse over time so we have some context for our results; also he will check the socio-ecnomomic background of Reddit users
 - Anja takes care of data cleaning and topic clustering
 - Felix looks into sentiment, emotion and continues to tinker with his API query which we can then use as an add on.
 - Will make an individual, fancier poster
