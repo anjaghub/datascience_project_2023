@@ -16,7 +16,7 @@ def main():
     # Decide if user or post data
     scraper = rs.ScrapePosts(df, data_path, credentials_path)
     scraper.run()
-    print(scraper.results[0]["author"])
+    print(scraper.results)#[0]["author"])
 
 
 if __name__ == "__main__":

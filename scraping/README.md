@@ -12,3 +12,6 @@ To get Reddit API access, sign up [here](https://www.reddit.com/prefs/apps), cre
     "password": YOUR_PASSWORD
 }
 ```
+
+
+To run, ...

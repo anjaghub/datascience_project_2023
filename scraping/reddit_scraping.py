@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 from abc import ABC
+import sys
+import time
 # API Doc: https://www.reddit.com/dev/api/
 
 
@@ -54,21 +56,25 @@ class ScrapePosts(RedditScraping):
         super().__init__(df, data_path, credentials_path, params)
 
     def scrape_post(self, subreddit, post_id):
+        time.sleep(1)
         # FIXME include timing to not exceed rate limits; try to access http header again
         # https://stackoverflow.com/questions/474528/how-to-repeatedly-execute-a-function-every-x-seconds
         res = requests.get(f"https://oauth.reddit.com/r/{subreddit}/comments/{post_id}",
                     headers=self.headers,
                     params=self.params)
         try:
+            return res.json()
             res_json = res.json()["data"]["children"]
+            return {"author": res_json[0]["data"]["author"],
+                "full": res_json}  # FIXME make selection only!
         except:
             # Problem if banned! Check response headers before checking data!
-            return -1
-        return {"author": res_json[0]["data"]["author"],
-                "full": res_json}  # FIXME make selection only!
-    
+            print("Exception:", sys.exc_info())
+            return 1 #res.json()
+        
     def run(self):
         for idx, row in self.df.iterrows():
+            print("idx", idx)
             self.results[idx] = self.scrape_post(subreddit=row["subreddit.name"], post_id=row["id"])
             break
 
