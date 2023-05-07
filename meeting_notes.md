@@ -1,5 +1,21 @@
 # Meeting Notes
 
+## 05.05.2023 Next Steps
+- Decided on only using comments (posts have different structure, often only title no body, also relatively small sample size)
+- Decided on creating separate datasets per year and limit the number of comments per year to max 100.000
+- Thus expect to have at most 1m comments in total (faster to process) 
+- Decided to keep "climate" and "change" in body (and remove for specific tasks)
+- We will remove some common HTML tags which occured in topic modeling
+- Anja adapts pre-processing file accordingly
+- Anja runs topic detection on final data and separately per year
+- Possible to incorporate weighting of posts by score (i.e. upvotes - downvotes) in topic selection? 
+- Felix runs several text classification models (sentiment, emotion, climate is concern)
+- Yvonne (/Felix) will assess final results and create some visualizations (and/or a fancy JavaScript based interactive dashboard ;)
+- Sentiment/emotion/climate-concern shares over time (in total)
+- Analysis of most prominent topics (over time)
+- Emotions/sentiment of hot topics (over time)
+- Should not forget about bias. Results based on comments (probably mainly of white, young males from western countries with high screen time -> maybe Luis can find out more about average reddit users)
+
 ## 27.04.2023 Topic Decision
 - Research questions which we want to propose:
     - Which topics are discussed on Reddit in relation to climate change?
