@@ -1,5 +1,13 @@
 # Meeting Notes
 
+## 15.05.2023 Final Steps
+- Yvonne mentioned the very small sample sizes for topics, problematic to show overall trends as shares would be very small (<2%)
+- Discussed to still continue as planned and might change "basis"/denominator to increase share size
+- Yvonne categorizing into larger groups und generating plots till Saturday before noon
+- Luis adds several points to poster (u.A. framing der Ergebnisse als Vorarbeit für Sozialwissenschaften)
+- Felix will add his "Senf" afterwards to finalize it till Monday the latest
+- Agreed on making some final meeting before the poster pitches, probably on Wednesday
+
 ## 05.05.2023 Next Steps
 - Decided on only using comments (posts have different structure, often only title no body, also relatively small sample size)
 - Decided on creating separate datasets per year and limit the number of comments per year to max 100.000 (randomly chosen)
