@@ -21,7 +21,8 @@ Download data from [kaggle](https://www.kaggle.com/datasets/pavellexyr/the-reddi
 2) Pre-processing of data
 3) Year-wise topic detection using BERT
 4) Sentiment and emotion detection using pre-trained HuggingFace transformers
-5) Visualizations of final results
+5) Visualizations of results
+6) Two files for creating a final plot for high-level grouped topics
 
 </br>
 
